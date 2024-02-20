@@ -12,8 +12,8 @@ export const routes: Routes = [
     //e una proprietà chiamata component:  ovvero il componente da visualizzare
     {path: '', component: HomeComponent},
     {path: 'credits', component: CreditsComponent},
-    {path: 'atists', component:ArtistsComponent},
-    {path: 'albums', component:AlbumsComponent},
+    {path: 'artists', component:ArtistsComponent},
+    {path: 'albums/:id', component:AlbumsComponent},
     //con ** gestisco tutti i percorsi precedentemente non dichiarati
     {path: '**', component: NotFoundComponent}
 
