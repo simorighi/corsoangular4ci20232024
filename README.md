@@ -35,3 +35,6 @@ Per creare un nuovo servizio:
 ```
 ng generate service nome _servizio --skip-tests
 ```
+
+----------------------------------------------------------------
+20/02/24
