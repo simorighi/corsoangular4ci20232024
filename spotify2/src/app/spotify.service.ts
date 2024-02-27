@@ -106,7 +106,7 @@ export class SpotifyService {
     */
 
     //let url = 'https://api.spotify.com/v1/artists/' + artistId + '/albums';
-    let url = `https://api.spotify.com/v1/artists/${artistId}/albums`
+    let url = `https://api.spotify.com/v1/artists/${artistId}/albums`;
 
     // Imposto la header usando il token bearer precedentemente ottenuto
     let header = new HttpHeaders()
@@ -116,5 +116,7 @@ export class SpotifyService {
     return this.httpClient.get(url, {headers: header});
   
   }
+
+
   
 }

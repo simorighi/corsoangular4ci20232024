@@ -10,13 +10,14 @@ import { Router } from '@angular/router';
 })
 export class ArtistCardComponent {
 
-  //Dependency Injection utilizzo oggetto router che mi consente di navigare
-  //attraverso codice ts
-  constructor(private router: Router) { }
+  // Dependency injection: utilizzo l'oggetto router che mi consente di
+  // navigare nell'applicazione attravero codice typescript
+  constructor(private router: Router) {}
 
   @Input() artist: any;
 
-  visualizzaAlbums(artistId: string):void {
-    this.router.navigate(['/albums', artistId]);
+  visualizzaAlbums(artistId: string): void {
+    // Il metodo navigate mi consente di cambiare la URL attiva del browser
+    this.router.navigate(['albums', artistId]);
   }
 }

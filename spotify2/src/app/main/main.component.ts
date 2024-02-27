@@ -5,7 +5,6 @@ import { RouterLink, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-main',
   standalone: true,
-  // Importante: devo importare RouterOutlet per attivare le routes definite
   imports: [RouterOutlet, RouterLink],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
